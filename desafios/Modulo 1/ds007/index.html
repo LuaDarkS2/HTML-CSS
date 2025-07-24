@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo_lobo.ico" type="image/x-icon">
+    <title>Desafio 7</title>
+</head>
+<body>
+    <h1>Imagem Flexível</h1>
+    <p>Veja as 3 formas de tamanho dessa imagem na sua tela.</p>
+    <picture>
+        <source media="(max-width: 730px)" srcset="img/foto_zeus-300px.png" type="image/png">
+        <source media="(max-width: 1030px)" srcset="img/foto_zeus-700px.png" type="image/png">
+        <img src="img/foto_zeus-1000px.png"
+         alt="Foto de um cachorro cheirando grama">
+    </picture>
+</body>
+</html>

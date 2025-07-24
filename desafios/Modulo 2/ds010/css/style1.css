@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+:root {
+    --cor1: #9ce9d8;
+    --cor2: #0a5c4e;
+    --cor3: white;
+    --cor4: #d4d4d4;
+    --cor5: #444444;
+    --font1: Arial, Helvetica, sans-serif;
+}
+
+/* Estilos para o corpo da página */
+body {
+    font-family: var(--font1);
+    background-color: var(--cor1);
+    margin: 0; 
+    line-height: 1.6; 
+}
+
+/* Estilos para o cabeçalho principal */
+header {
+    background-color: #0a5c4e;
+    padding: 10px;
+    text-align: center; /* Centraliza o conteúdo do cabeçalho, incluindo o h1 */
+}
+
+h1 {
+    text-align: center; /* Garante que todos os h1 fiquem centralizados */
+    color: white; /* Cor mais escura para o título */
+    margin-bottom: 15px; /* Espaço abaixo do título */
+}
+
+header nav { /* Selecionador mais específico para a nav do header */
+    background-color: #d4d4d4; /* Usando darkgray para consistência com o body */
+    padding: 8px 0; /* Um pouco mais de padding vertical para os links */
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sutil sombra para destacar */
+}
+
+header nav > a {
+    text-decoration: none;
+    margin: 0 15px; /* Margem horizontal para espaçar os links */
+    color: #0a5c4e; /* Cor do texto dos links na nav principal */
+    font-weight: bold;
+    transition: color 0.3s ease; /* Transição suave para o hover */
+}
+
+header nav > a:hover {
+    text-decoration: underline;
+    color: #14b398; /* Cor mais clara no hover */
+}
+
+/* Estilos para o conteúdo principal */
+main {
+    background-color: white;
+    padding: 20px 30px; /* Mais padding para o conteúdo interno */
+    margin: 0px 70px 10px 70px; /* Margem superior e inferior, e nas laterais */
+    border-radius: 0 0 10px 10px; /* Borda arredondada apenas na parte inferior */
+    box-shadow: 0 0 15px #0000001a; /* Sombra suave para a seção principal */
+    line-height: 1.7; /* Aumenta o espaçamento entre linhas nos parágrafos */
+}
+
+main section h1 {
+    /* Estilos para o h1 dentro das seções do main */
+    /* Se você quer que o h1 principal da página esteja centralizado, mas os h1 das seções não,
+       coloque text-align: left; aqui. Caso contrário, remova este bloco. */
+    text-align: left; /* Alinha o h1 da seção à esquerda */
+    color: #444444;
+    margin-top: 30px; /* Espaço acima do título da seção */
+    margin-bottom: 20px; /* Espaço abaixo do título da seção */
+}
+
+main section p {
+    margin-bottom: 15px; /* Espaço abaixo dos parágrafos */
+    text-align: justify; /* Justifica o texto para um visual mais limpo */
+}
+
+/* --- ESTILOS PARA AS NOVAS ADIÇÕES --- */
+
+/* Estilos para o contêiner do vídeo (o div que envolve o iframe) */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Proporção de 16:9 (altura/largura) */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    margin-bottom: 20px; /* Espaço abaixo do vídeo */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Estilos para o aside (saga secundária) */
+aside {
+    background-color: #e0e0e0; /* Um cinza mais claro para o aside */
+    padding: 20px;
+    margin-top: 30px; /* Espaço acima do aside */
+    border-radius: 8px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05); /* Sombra interna para destaque suave */
+    text-align: left; /* Garante que o conteúdo dentro do aside comece à esquerda */
+}
+
+aside h2 {
+    color: #555;
+    margin-top: 0; /* Remove margem superior padrão do h2 dentro do aside */
+}
+
+aside p {
+    text-align: left; /* Alinha os parágrafos dentro do aside à esquerda */
+    margin-bottom: 10px;
+}
+
+aside ul {
+    list-style-type: disc; /* Bolinhas para a lista */
+    margin-left: 20px; /* Indentação para a lista */
+    margin-bottom: 15px;
+}
+
+aside li {
+    margin-bottom: 5px;
+}
+
+
+/* Estilos para a navegação DENTRO do aside */
+aside nav {
+    background-color: transparent; /* Sem cor de fundo para esta nav */
+    padding: 0; /* Remove padding padrão, pois queremos que os links fiquem na esquerda */
+    text-align: left; /* IMPORTANTE: Alinha o texto à esquerda */
+    box-shadow: none; /* Remove sombra, se houver */
+    margin-top: 15px;
+}
+
+aside nav a { /* Estilizando os links dentro da nav do aside */
+    display: block; /* Faz com que cada link ocupe uma linha inteira */
+    text-decoration: none;
+    color: #007bff; /* Uma cor azul para links para diferenciá-los */
+    padding: 5px 0; /* Espaçamento vertical para cada link */
+    font-weight: normal; /* Sem negrito para os links da aside */
+    transition: color 0.3s ease;
+}
+
+aside nav a:hover {
+    text-decoration: underline;
+    color: #0056b3; /* Cor mais escura no hover */
+}
+
+/* Estilos para o rodapé */
+/* Estilos para o rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0px;
+    margin-top: 0px; /* IMPORTANTE: Empurra o footer para o final do contêiner*/
+}
