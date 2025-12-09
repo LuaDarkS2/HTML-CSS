@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste de centralização vertical</title>
+    <style>
+        #container {
+            position: relative;
+            height: 96vh;  /* altura da viewport menos 4vh para evitar barra de rolagem */
+            padding: 10px;
+            background-color: blue;
+
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+        }
+        #conteudo {
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: rgb(16, 207, 255);
+
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+
+
+            left: 50%; /* é a distancia que vem da borda até o ponto*/
+            top: 50%; /* é a distancia que vem do topo até o ponto*/
+
+            transform: translate(-50%, -50%); /* centralização */ 
+
+            /* transform: ; /* move o elemento para cima e para esquerda metade da sua largura e altura */
+            /* transform: translate(20px, 20px); /* ele move 20px para direita e 20px para baixo */
+
+            /* transform: translate(-20px, -20px); /* ele move 20px para esquerda e 20px para cima */
+
+            /* transform: translate(20px, -20px); /* ele move 20px para direita e 20px para cima */
+            
+            /* transform: translate(-20px, 20px); /* ele move 20px para esquerda e 20px para baixo */
+
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
