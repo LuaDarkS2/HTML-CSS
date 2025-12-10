@@ -1,13 +1,24 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@1,6..96,500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;  
+    --fonte2: 'Bodoni Moda', serif;
+    --fonte3: 'Sriracha', cursive;
+}
 * {
     margin: 0px;
     padding: 0px;
+    font-family: 
 }
 
 html,body {
     background-color: darkgray;
     min-height: 100vh;
+    font-family: var(--fonte1);
 }
 
 header {
@@ -17,7 +28,10 @@ header {
 }
 
 header > h1 {
-    padding: 50px;
+    padding: 40px;
+    font-family: var(--fonte2);
+    /*font-size: 4em;*/
+    font-size: 5.5vw; /* Tamanho responsivo conforme a largura da tela */
     font-variant: small-caps; /* Deixar as letras maiúsculas, mas com tamanho menor para as minúsculas */
 
     /* text-transform: uppercase; /* Deixar todas as letras maiúsculas */
@@ -25,6 +39,7 @@ header > h1 {
 
 header > p {
     padding-bottom: 50px;
+    font-size: 1.2em;
 }
 
 header a, footer a{
@@ -42,6 +57,8 @@ section { /* Estilização comum para todas as sections */
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 2.5vw; /* Tamanho responsivo conforme a largura da tela */
 }
 
 section.normal {
@@ -56,7 +73,8 @@ section.imagem {
 
 section.imagem > p {
     background-color: rgba(0, 0, 0, 0.247);
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
 }
 
 footer {
