@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabelas 4</title>
+    <title>Tabelas 5</title>
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
@@ -34,10 +34,20 @@
             background-color: #383838;
             color: white;
         }
+
+        /* :nth-child é um pseudo-seletor que seleciona elementos com base em sua posição entre irmãos*/
+        /* tbody > tr:nth-child(3n) /* Seleciona as linhas de 3 em 3 do corpo da tabela */
+        /* tbody > tr:nth-child(2n-1) /* Seleciona as linhas o contrario do 2n do corpo da tabela */
+        /* tbody > tr:nth-child(odd) /* Seleciona as linhas ímpares do corpo da tabela */
+        /* tbody > tr:nth-child(even) /* Seleciona as linhas pares do corpo da tabela */
+        
+        tbody > tr:nth-child(2n) { /* Seleciona as linhas de 2 em duas do corpo da tabela */
+            background-color: lightgrey;
+        }
     </style>
 </head>
 <body>
-    <h1>Tabelas Grandes</h1>
+    <h1>Tabelas Grandes - Efeito Zebrado</h1>
 
     <!-- 
             ANATOMIA PARA TABELAS GRANDES
