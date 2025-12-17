@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse; /* remove espaços entre as bordas */
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        .cnome {
+            background-color: aquamarine;
+        }
+
+        .cgrupo {
+            background-color: lightseagreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabela - agrupamento de colunas coloridas</h1>
+
+    <table>
+
+        <colgroup> <!-- Agrupamento de colunas -->
+            <col class="cnome"> <!-- Aplicando estilo específico à coluna Nome -->
+            <col class="cgrupo" span="2"> <!-- Aplicando estilo específico à coluna Sexo e Idade -->
+            <col class="cprof"> <!-- Aplicando estilo específico à coluna Profissão -->
+        </colgroup>
+
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Maria Eduarda</td>
+            <td>Feminino</td>
+            <td>21</td>
+            <td>Estagiaria</td>
+        </tr>
+        <tr>
+            <td>João Pedro</td>
+            <td>Masculino</td>
+            <td>25</td>
+            <td>Designer</td>
+        </tr>
+        <tr>
+            <td>Nicolas</td>
+            <td>Masculino</td>
+            <td>21</td>
+            <td>Desenvolvedor</td>
+        </tr>
+        <tr>
+            <td>Alana</td>
+            <td>Feminino</td>
+            <td>23</td>
+            <td>Desenvolvedora</td>
+        </tr>
+        <tr>
+            <td>Hélio</td>
+            <td>Masculino</td>
+            <td>19</td>
+            <td>Vendedor</td>
+        </tr>
+        <tr>
+            <td>Larissa</td>
+            <td>Feminino</td>
+            <td>27</td>
+            <td>Gerente RH</td>
+        </tr>
+    </table>
+</body>
+</html>
